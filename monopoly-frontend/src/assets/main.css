@@ -1,0 +1,91 @@
+:root{
+  --alt-green-color: #545E53;
+  --board-theme: #C7DEC4;
+
+  --board-color-1: #9a4f2f;
+  --board-color-2: #99d4f6;
+  --board-color-3: #db308e;
+  --board-color-4: #ef7d01;
+  --board-color-5: #f5141c;
+  --board-color-6: #fcec01;
+  --board-color-7: #19af4e;
+  --board-color-8: #016fbc;
+}
+
+html {
+  background: url("../assets/tile.png") repeat 0 0;
+  
+  -webkit-animation: bg-scrolling-reverse 2s infinite; /* Safari 4+ */
+  -moz-animation:    bg-scrolling-reverse 2s infinite; /* Fx 5+ */
+  -o-animation:      bg-scrolling-reverse 2s infinite; /* Opera 12+ */
+  animation:         bg-scrolling-reverse 2s infinite; /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function:    linear;
+  -o-animation-timing-function:      linear;
+  animation-timing-function:         linear;
+
+  font-family: 'JetBrains Mono', monospace;
+  box-sizing: border-box !important;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  background-color: white;
+  
+  height:40px;
+  border-top: 3px solid black;
+  font-size: 19px;
+
+  padding-right:10px;
+
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+}
+footer a{
+  all:unset;
+  cursor:pointer;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  margin-right:10px;
+  color: var(--alt-green-color) !important;
+}
+
+.notice{
+  background-color: white;
+  border: solid 3px black;
+}
+
+.notice .noticeTitle {
+  font-size: 39px;
+  border-bottom: 3px solid black;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color:#000000 !important;
+}
+
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% { background-position: 0px 50px; }
+}
+@-moz-keyframes    bg-scrolling-reverse {
+  100% { background-position: 0px 50px; }
+}
+@-o-keyframes      bg-scrolling-reverse {
+  100% { background-position: 0px 50px; }
+}
+@keyframes         bg-scrolling-reverse {
+  100% { background-position: 0px 50px; }
+}
